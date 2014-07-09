@@ -1,0 +1,29 @@
+{
+  "name": "css-animation-timing",
+  "version": "0.0.1",
+  "homepage": "http://github.com/mrmrs/css-animation-timing",
+  "description": "Css module of single purpose classes for animation timing",
+  "keywords": [
+    "css",
+    "oocss",
+    "",
+    ""
+  ],
+  "css-animation-timing": {
+    "type": "git",
+    "url": "http://github.com/mrmrs/css-animation-timing.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mrmrs/repo/issues",
+    "email": "hi@mrmrs.cc"
+  },
+  "author": {
+    "name": "Adam Morse",
+    "email": "hi@mrmrs.cc",
+    "url": "http://mrmrs.cc"
+  },
+  "contributors": [
+    { "name": "Adam Morse", "email": "hi@mrmrs.cc" }
+  ],
+  "license": "MIT"
+}
