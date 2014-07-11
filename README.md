@@ -29,7 +29,7 @@ or download the css on github and include in your project.
   .a-stop {      animation-timing-function: step-stop; }
 
 
-@include break(not-small) {
+@media screen and (min-width: 48em) {
   .a-ease-ns {      animation-timing-function: ease; }
   .a-easein-ns {    animation-timing-function: ease-in; }
   .a-easeout-ns {   animation-timing-function: ease-out; }
@@ -40,7 +40,7 @@ or download the css on github and include in your project.
   .a-stop-ns {      animation-timing-function: step-stop; }
 }
 
-@include break(medium) {
+@media screen and (min-width: 48em) and (max-width: 64em) {
   .a-ease-m {      animation-timing-function: ease; }
   .a-easein-m {    animation-timing-function: ease-in; }
   .a-easeout-m {   animation-timing-function: ease-out; }
@@ -51,7 +51,7 @@ or download the css on github and include in your project.
   .a-stop-m {      animation-timing-function: step-stop; }
 }
 
-@include break(large) {
+@media screen and (min-width: 64em)  {
   .a-ease-l {      animation-timing-function: ease; }
   .a-easein-l {    animation-timing-function: ease-in; }
   .a-easeout-l {   animation-timing-function: ease-out; }
