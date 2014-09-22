@@ -20,7 +20,8 @@ View on [npm](https://www.npmjs.org/package/css-animation-timing)
 ## File Size
 
 2.1K animation-timing.css
-1.7K animation-timing.min.css
+1.7K animation-timing.min.css 
+272B minified and gzipped
 
 ## The Code
 ```
