@@ -9,13 +9,18 @@
 *  -l  = large
 
 ## Install
+Grab the css partial from github and include it in your project or alternatively
+you can install it via npm:
 ```
 npm install --save-dev css-animation-timing
 ```
-or download the css on github and include in your project.
+View on [npm](https://www.npmjs.org/package/css-animation-timing)
+
 
 ## File Size
 
+2.1K animation-timing.css
+1.7K animation-timing.min.css
 
 ## The Code
 ```
