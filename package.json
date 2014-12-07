@@ -1,5 +1,6 @@
 {
   "name": "css-animation-timing",
+  "style": "animation-timing.css",
   "version": "0.0.5",
   "homepage": "http://github.com/mrmrs/css-animation-timing",
   "description": "Css module of single purpose classes for animation timing",
