@@ -1,10 +1,10 @@
-# css-animation-timing 0.0.7
+# css-animation-timing 1.0.6
 
 Css module of single purpose classes for animation timing
 
 #### Stats
 
-323 | 32 | 32
+369 | 32 | 64
 ---|---|---
 bytes | selectors | declarations
 
@@ -16,15 +16,25 @@ bytes | selectors | declarations
 npm install --save-dev css-animation-timing
 ```
 
+Learn more about using css installed with npm:
+* https://webpack.github.io/docs/stylesheets.html
+* https://github.com/defunctzombie/npm-css
+
 #### With Git
 
+http:
 ```
 git clone https://github.com/tachyons-css/css-animation-timing
 ```
 
+ssh:
+```
+git clone git@github.com:tachyons-css/css-animation-timing.git
+```
+
 ## Usage
 
-#### Using with [PostCSS](https://github.com/postcss/postcss)
+#### Using with [Postcss](https://github.com/postcss/postcss)
 
 Import the css module
 
@@ -32,16 +42,24 @@ Import the css module
 @import "css-animation-timing";
 ```
 
-Then process the CSS using the [`tachyons-cli`](https://github.com/tachyons-css/tachyons-cli)
+Then process the css using the [`tachyons-cli`](https://github.com/tachyons-css/tachyons-cli)
 
 ```sh
 $ npm i -g tachyons-cli
-$ tachyons-cli path/to/css-file.css > dist/t.css
+$ tachyons path/to/css-file.css > dist/t.css
 ```
 
-#### Using the CSS
+#### Using the css
 
-The built CSS is located in the `css` directory. It contains an unminified and minified version.
+##### CDN
+The easiest and most simple way to use the css is to use the cdn hosted version. Include it in the head of your html with:
+
+```
+<link rel="stylesheet" href="http://unpkg.com/css-animation-timing@1.0.6/css/css-animation-timing.min.css" />
+```
+
+##### Locally
+The built css is located in the `css` directory. It contains an unminified and minified version.
 You can either cut and paste that css or link to it directly in your html.
 
 ```html
@@ -50,52 +68,52 @@ You can either cut and paste that css or link to it directly in your html.
 
 #### Development
 
-The source CSS files can be found in the `src` directory.
-Running `$ npm start` will process the source CSS and place the built CSS in the `css` directory.
+The source css files can be found in the `src` directory.
+Running `$ npm start` will process the source css and place the built css in the `css` directory.
 
-## The CSS
+## The css
 
 ```css
 /*
    ANIMATION TIMING
 */
-.a-ease { animation-timing-function: ease; }
-.a-easein { animation-timing-function: ease-in; }
-.a-easeout { animation-timing-function: ease-out; }
-.a-easeinout { animation-timing-function: ease-in-out; }
-.a-linear { animation-timing-function: linear; }
-.a-bezier { animation-timing-function: cubic-bezier( 0.1, 0.1, 0.1, 0.1 ); }
-.a-start { animation-timing-function: step-start; }
-.a-stop { animation-timing-function: step-stop; }
+.a-ease { -webkit-animation-timing-function: ease; animation-timing-function: ease; }
+.a-easein { -webkit-animation-timing-function: ease-in; animation-timing-function: ease-in; }
+.a-easeout { -webkit-animation-timing-function: ease-out; animation-timing-function: ease-out; }
+.a-easeinout { -webkit-animation-timing-function: ease-in-out; animation-timing-function: ease-in-out; }
+.a-linear { -webkit-animation-timing-function: linear; animation-timing-function: linear; }
+.a-bezier { -webkit-animation-timing-function: cubic-bezier( .1, .1, .1, .1 ); animation-timing-function: cubic-bezier( .1, .1, .1, .1 ); }
+.a-start { -webkit-animation-timing-function: step-start; animation-timing-function: step-start; }
+.a-stop { -webkit-animation-timing-function: step-stop; animation-timing-function: step-stop; }
 @media screen and (min-width: 48em) {
- .a-ease-ns { animation-timing-function: ease; }
- .a-easein-ns { animation-timing-function: ease-in; }
- .a-easeout-ns { animation-timing-function: ease-out; }
- .a-easeinout-ns { animation-timing-function: ease-in-out; }
- .a-linear-ns { animation-timing-function: linear; }
- .a-bezier-ns { animation-timing-function: cubic-bezier( 0.1, 0.1, 0.1, 0.1 ); }
- .a-start-ns { animation-timing-function: step-start; }
- .a-stop-ns { animation-timing-function: step-stop; }
+ .a-ease-ns { -webkit-animation-timing-function: ease; animation-timing-function: ease; }
+ .a-easein-ns { -webkit-animation-timing-function: ease-in; animation-timing-function: ease-in; }
+ .a-easeout-ns { -webkit-animation-timing-function: ease-out; animation-timing-function: ease-out; }
+ .a-easeinout-ns { -webkit-animation-timing-function: ease-in-out; animation-timing-function: ease-in-out; }
+ .a-linear-ns { -webkit-animation-timing-function: linear; animation-timing-function: linear; }
+ .a-bezier-ns { -webkit-animation-timing-function: cubic-bezier( .1, .1, .1, .1 ); animation-timing-function: cubic-bezier( .1, .1, .1, .1 ); }
+ .a-start-ns { -webkit-animation-timing-function: step-start; animation-timing-function: step-start; }
+ .a-stop-ns { -webkit-animation-timing-function: step-stop; animation-timing-function: step-stop; }
 }
 @media screen and (min-width:48em) and (max-width: 64em) {
- .a-ease-m { animation-timing-function: ease; }
- .a-easein-m { animation-timing-function: ease-in; }
- .a-easeout-m { animation-timing-function: ease-out; }
- .a-easeinout-m { animation-timing-function: ease-in-out; }
- .a-linear-m { animation-timing-function: linear; }
- .a-bezier-m { animation-timing-function: cubic-bezier( 0.1, 0.1, 0.1, 0.1 ); }
- .a-start-m { animation-timing-function: step-start; }
- .a-stop-m { animation-timing-function: step-stop; }
+ .a-ease-m { -webkit-animation-timing-function: ease; animation-timing-function: ease; }
+ .a-easein-m { -webkit-animation-timing-function: ease-in; animation-timing-function: ease-in; }
+ .a-easeout-m { -webkit-animation-timing-function: ease-out; animation-timing-function: ease-out; }
+ .a-easeinout-m { -webkit-animation-timing-function: ease-in-out; animation-timing-function: ease-in-out; }
+ .a-linear-m { -webkit-animation-timing-function: linear; animation-timing-function: linear; }
+ .a-bezier-m { -webkit-animation-timing-function: cubic-bezier( .1, .1, .1, .1 ); animation-timing-function: cubic-bezier( .1, .1, .1, .1 ); }
+ .a-start-m { -webkit-animation-timing-function: step-start; animation-timing-function: step-start; }
+ .a-stop-m { -webkit-animation-timing-function: step-stop; animation-timing-function: step-stop; }
 }
 @media screen and (min-width: 64em) {
- .a-ease-l { animation-timing-function: ease; }
- .a-easein-l { animation-timing-function: ease-in; }
- .a-easeout-l { animation-timing-function: ease-out; }
- .a-easeinout-l { animation-timing-function: ease-in-out; }
- .a-linear-l { animation-timing-function: linear; }
- .a-bezier-l { animation-timing-function: cubic-bezier( 0.1, 0.1, 0.1, 0.1 ); }
- .a-start-l { animation-timing-function: step-start; }
- .a-stop-l { animation-timing-function: step-stop; }
+ .a-ease-l { -webkit-animation-timing-function: ease; animation-timing-function: ease; }
+ .a-easein-l { -webkit-animation-timing-function: ease-in; animation-timing-function: ease-in; }
+ .a-easeout-l { -webkit-animation-timing-function: ease-out; animation-timing-function: ease-out; }
+ .a-easeinout-l { -webkit-animation-timing-function: ease-in-out; animation-timing-function: ease-in-out; }
+ .a-linear-l { -webkit-animation-timing-function: linear; animation-timing-function: linear; }
+ .a-bezier-l { -webkit-animation-timing-function: cubic-bezier( .1, .1, .1, .1 ); animation-timing-function: cubic-bezier( .1, .1, .1, .1 ); }
+ .a-start-l { -webkit-animation-timing-function: step-start; animation-timing-function: step-start; }
+ .a-stop-l { -webkit-animation-timing-function: step-stop; animation-timing-function: step-stop; }
 }
 ```
 
@@ -115,3 +133,4 @@ Running `$ npm start` will process the source CSS and place the built CSS in the
 ## License
 
 ISC
+
