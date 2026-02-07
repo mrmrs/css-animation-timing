@@ -13,14 +13,14 @@
 
 
 @media screen and (min-width: 48em) {
-  .a-ease-ns {      animation-timing-function: ease; }
-  .a-easein-ns {    animation-timing-function: ease-in; }
-  .a-easeout-ns {   animation-timing-function: ease-out; }
-  .a-easeinout-ns { animation-timing-function: ease-in-out; }
-  .a-linear-ns {    animation-timing-function: linear; }
-  .a-bezier-ns {    animation-timing-function: cubic-bezier(0.1, 0.1, 0.1, 0.1); }
-  .a-start-ns {     animation-timing-function: step-start; }
-  .a-stop-ns {      animation-timing-function: step-stop; }
+  .a-ease-s {      animation-timing-function: ease; }
+  .a-easein-s {    animation-timing-function: ease-in; }
+  .a-easeout-s {   animation-timing-function: ease-out; }
+  .a-easeinout-s { animation-timing-function: ease-in-out; }
+  .a-linear-s {    animation-timing-function: linear; }
+  .a-bezier-s {    animation-timing-function: cubic-bezier(0.1, 0.1, 0.1, 0.1); }
+  .a-start-s {     animation-timing-function: step-start; }
+  .a-stop-s {      animation-timing-function: step-stop; }
 }
 
 @media screen and (min-width:48em) and (max-width: 64em) {
