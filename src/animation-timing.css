@@ -12,7 +12,7 @@
   .a-stop {      animation-timing-function: step-stop; }
 
 
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 32em) {
   .a-ease-s {      animation-timing-function: ease; }
   .a-easein-s {    animation-timing-function: ease-in; }
   .a-easeout-s {   animation-timing-function: ease-out; }
@@ -23,7 +23,7 @@
   .a-stop-s {      animation-timing-function: step-stop; }
 }
 
-@media screen and (min-width:48em) and (max-width: 64em) {
+@media screen and (min-width:48em) {
   .a-ease-m {      animation-timing-function: ease; }
   .a-easein-m {    animation-timing-function: ease-in; }
   .a-easeout-m {   animation-timing-function: ease-out; }
@@ -34,7 +34,7 @@
   .a-stop-m {      animation-timing-function: step-stop; }
 }
 
-@media screen and (min-width: 64em) {
+@media screen and (min-width: 96em) {
   .a-ease-l {      animation-timing-function: ease; }
   .a-easein-l {    animation-timing-function: ease-in; }
   .a-easeout-l {   animation-timing-function: ease-out; }
